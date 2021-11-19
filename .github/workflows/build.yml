@@ -5,19 +5,7 @@ name: Tests
 # mandatory but not scheduled because of "paths-ignore".
 on:
   workflow_dispatch
-  push:
-    branches:
-    - main
-    - 3.9
-    - 3.8
-    - 3.7
-  pull_request:
-    branches:
-    - main
-    - 3.9
-    - 3.8
-    - 3.7
-
+  
 jobs:
   check_source:
     name: 'Check for source changes'
